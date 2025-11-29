@@ -1,211 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>Geek Cave</title>
-  </head>
-  <body>
-    <div class="body-container">
-      <div class="section">
-        <input type="search" placeholder="Search..." id="search-bar" />
-      </div>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:title" content="Geek Cave" />
+		<meta
+			property="og:description"
+			content="Tu cueva de juegos, anime, series y más"
+		/>
+		<link rel="icon" type="image/png" href="./images/icons/logo.png" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Geek Cave</title>
+	</head>
+	<body>
+		<div class="body-content">
+			<section class="search-section animated show-up">
+				<input
+					type="search"
+					id="search-bar"
+					placeholder="Buscar juegos, anime, películas..."
+				/>
+			</section>
 
-      <div class="categories-section section">
-        <a href="#" class="category">
-          <img src="./images/icons/games.svg" alt="" />
-          <div class="category-name bold">Games</div>
-        </a>
+			<section class="categories-section animated show-up">
+				<a href="#" class="category">
+					<img src="./images/icons/games.svg" alt="Juegos" />
+					<div class="category-name bold">Games</div>
+				</a>
+				<a href="#" class="category">
+					<img src="./images/icons/anime.svg" alt="Anime" />
+					<div class="category-name bold">Anime</div>
+				</a>
+				<a href="#" class="category">
+					<img src="./images/icons/films.svg" alt="Películas" />
+					<div class="category-name bold">Films</div>
+				</a>
+				<a href="#" class="category">
+					<img src="./images/icons/series.svg" alt="Series" />
+					<div class="category-name bold">Series</div>
+				</a>
+			</section>
 
-        <a href="#" class="category" class="category">
-          <img src="./images/icons/anime.svg" alt="" />
-          <div class="category-name bold">Anime</div>
-        </a>
-        <a href="#" class="category">
-          <img src="./images/icons/films.svg" alt="" />
-          <div class="category-name bold">Films</div>
-        </a>
-        <a href="#" class="category">
-          <img src="./images/icons/series.svg" alt="" />
-          <div class="category-name bold">Series</div>
-        </a>
-      </div>
+			<main class="main-grid">
+				<section class="news-section animated show-left">
+					<a href="#" class="blog">
+						<img
+							src="https://picsum.photos/600/400?random=10"
+							class="blog-bg"
+							alt=""
+						/>
+						<div class="blog-overlay">
+							<div class="blog-title bold">
+								Diablo II Resurrected – La obra maestra vuelve
+							</div>
+							<div class="blog-category bold">Games</div>
+						</div>
+					</a>
+					<a href="#" class="blog">
+						<img
+							src="https://picsum.photos/600/400?random=11"
+							class="blog-bg"
+							alt=""
+						/>
+						<div class="blog-overlay">
+							<div class="blog-title bold">
+								Neon Genesis Evangelion: El final explicado
+							</div>
+							<div class="blog-category bold">Anime</div>
+						</div>
+					</a>
+					<a href="#" class="blog">
+						<img
+							src="https://picsum.photos/600/400?random=12"
+							class="blog-bg"
+							alt=""
+						/>
+						<div class="blog-overlay">
+							<div class="blog-title bold">
+								God of War Ragnarök – Primeras impresiones
+							</div>
+							<div class="blog-category bold">Games</div>
+						</div>
+					</a>
+					<a href="#" class="blog">
+						<img
+							src="https://picsum.photos/600/400?random=13"
+							class="blog-bg"
+							alt=""
+						/>
+						<div class="blog-overlay">
+							<div class="blog-title bold">Top 10 openings de anime 2025</div>
+							<div class="blog-category bold">Anime</div>
+						</div>
+					</a>
+				</section>
 
-      <div class="grid-container">
-        <div class="news-section section">
-          <a href="#" class="blog">
-            <img src="./images/bg.jpg" class="blog-bg" />
-            <div class="blog-overlay">
-              <div class="blog-title bold">Diablo II Review</div>
-              <div class="blog-category bold">Games</div>
-            </div>
-          </a>
-          <a href="#" class="blog">
-            <img src="./images/bg.jpg" class="blog-bg" />
-            <div class="blog-overlay">
-              <div class="blog-title bold">Beyond: Two Souls</div>
-              <div class="blog-category bold">Games</div>
-            </div>
-          </a>
-          <a href="#" class="blog">
-            <img src="./images/bg.jpg" class="blog-bg" />
-            <div class="blog-overlay">
-              <div class="blog-title bold">God of War</div>
-              <div class="blog-category bold">Games</div>
-            </div>
-          </a>
-          <a href="#" class="blog">
-            <img src="./images/bg.jpg" class="blog-bg" />
-            <div class="blog-overlay">
-              <div class="blog-title bold">Tú Sabrás Pvto</div>
-              <div class="blog-category bold">Anime</div>
-            </div>
-          </a>
-        </div>
+				<section class="discover-section animated bounce-in">
+					<div class="discover-grid">
+						<div class="profile">
+							<a href="#">
+								<img src="https://i.pravatar.cc/150?img=1" alt="" />
+								<p class="username">@kami_sama</p>
+							</a>
+						</div>
+						<div class="profile">
+							<a href="#">
+								<img src="https://i.pravatar.cc/150?img=5" alt="" />
+								<p class="username">@zero_two</p>
+							</a>
+						</div>
+						<div class="profile">
+							<a href="#">
+								<img src="https://i.pravatar.cc/150?img=12" alt="" />
+								<p class="username">@gamer_x</p>
+							</a>
+						</div>
+						<div class="profile">
+							<a href="#">
+								<img src="https://i.pravatar.cc/150?img=20" alt="" />
+								<p class="username">@otaku4ever</p>
+							</a>
+						</div>
+						<div class="profile">
+							<a href="#">
+								<img src="https://i.pravatar.cc/150?img=32" alt="" />
+								<p class="username">@cinefilo</p>
+							</a>
+						</div>
+						<div class="profile">
+							<a href="#">
+								<img src="https://i.pravatar.cc/150?img=47" alt="" />
+								<p class="username">@retro_guy</p>
+							</a>
+						</div>
+					</div>
+				</section>
 
-        <div class="discover-section section">
-          <div class="profile">
-            <a href="#">
-              <img src="./images/coin.png" alt="" />
-              <p class="username">@kami_sama</p>
-            </a>
-          </div>
-          <div class="profile">
-            <a href="#">
-              <img src="./images/coin.png" alt="" />
-              <p class="username">@kami_sama</p>
-            </a>
-          </div>
-          <div class="profile">
-            <a href="#">
-              <img src="./images/coin.png" alt="" />
-              <p class="username">@kami_sama</p>
-            </a>
-          </div>
-          <div class="profile">
-            <a href="#">
-              <img src="./images/coin.png" alt="" />
-              <p class="username">@kami_sama</p>
-            </a>
-          </div>
-          <div class="profile">
-            <a href="#">
-              <img src="./images/coin.png" alt="" />
-              <p class="username">@kami_sama</p>
-            </a>
-          </div>
-          <div class="profile">
-            <a href="#">
-              <img src="./images/coin.png" alt="" />
-              <p class="username">@kami_sama</p>
-            </a>
-          </div>
-        </div>
-      </div>
+				<section class="curiosities-section animated show-up">
+					<a href="#" class="curiosity">
+						<img
+							src="https://picsum.photos/400/400?random=20"
+							class="curiosity-bg"
+							alt=""
+						/>
+						<div class="curiosity-details">
+							<div class="curiosity-title">10 cosas que no sabías de Goku</div>
+							<div class="curiosity-category important-text">Anime</div>
+						</div>
+					</a>
+					<a href="#" class="curiosity">
+						<img
+							src="https://picsum.photos/400/400?random=21"
+							class="curiosity-bg"
+							alt=""
+						/>
+						<div class="curiosity-details">
+							<div class="curiosity-title">
+								Secretos de The Last of Us Part II
+							</div>
+							<div class="curiosity-category important-text">Games</div>
+						</div>
+					</a>
+					<a href="#" class="curiosity">
+						<img
+							src="https://picsum.photos/400/400?random=22"
+							class="curiosity-bg"
+							alt=""
+						/>
+						<div class="curiosity-details">
+							<div class="curiosity-title">Easter eggs de Evangelion</div>
+							<div class="curiosity-category important-text">Anime</div>
+						</div>
+					</a>
+					<a href="#" class="curiosity">
+						<img
+							src="https://picsum.photos/400/400?random=23"
+							class="curiosity-bg"
+							alt=""
+						/>
+						<div class="curiosity-details">
+							<div class="curiosity-title">
+								Los mejores finales alternativos
+							</div>
+							<div class="curiosity-category important-text">Films</div>
+						</div>
+					</a>
+					<a href="#" class="curiosity">
+						<img
+							src="https://picsum.photos/400/400?random=24"
+							class="curiosity-bg"
+							alt=""
+						/>
+						<div class="curiosity-details">
+							<div class="curiosity-title">
+								Breaking Bad es una obra maestra
+							</div>
+							<div class="curiosity-category important-text">Series</div>
+						</div>
+					</a>
+					<a href="#" class="curiosity">
+						<img
+							src="https://picsum.photos/400/400?random=25"
+							class="curiosity-bg"
+							alt=""
+						/>
+						<div class="curiosity-details">
+							<div class="curiosity-title">
+								La historia real de Resident Evil
+							</div>
+							<div class="curiosity-category important-text">Games</div>
+						</div>
+					</a>
+				</section>
+			</main>
+		</div>
 
-      <div class="feed-section section">
-        <a href="#" class="blog">
-          <img src="./images/bg.jpg" class="blog-bg" />
-          <div class="blog-overlay">
-            <div class="blog-title bold">Diablo II Review</div>
-            <div class="blog-category bold">Games</div>
-          </div>
-        </a>
-        <a href="#" class="blog">
-          <img src="./images/bg.jpg" class="blog-bg" />
-          <div class="blog-overlay">
-            <div class="blog-title bold">Beyond: Two Souls</div>
-            <div class="blog-category bold">Games</div>
-          </div>
-        </a>
-        <a href="#" class="blog">
-          <img src="./images/bg.jpg" class="blog-bg" />
-          <div class="blog-overlay">
-            <div class="blog-title bold">God of War</div>
-            <div class="blog-category bold">Games</div>
-          </div>
-        </a>
-        <a href="#" class="blog">
-          <img src="./images/bg.jpg" class="blog-bg" />
-          <div class="blog-overlay">
-            <div class="blog-title bold">Tú Sabrás Pvto</div>
-            <div class="blog-category bold">Anime</div>
-          </div>
-        </a>
-      </div>
+		<footer>
+			<div class="footer-content">
+				<div class="logo">Geek Cave</div>
+				<div class="social-links">
+					<a href="#"
+						><img src="./images/icons/instagram.svg" alt="Instagram"
+					/></a>
+					<a href="#"><img src="./images/icons/twitter.svg" alt="Twitter" /></a>
+					<a href="#"
+						><img src="./images/icons/facebook.svg" alt="Facebook"
+					/></a>
+				</div>
+				<p>All Rights Reserved © 2025</p>
+			</div>
+		</footer>
 
-      <div class="curiosities-section section">
-        <a href="#" class="curiosity">
-          <img src="./images/bg.jpg" alt="" class="curiosity-bg" />
-          <div class="curiosity-details">
-            <div class="curiosity-title">10 cosas que no sabías de Goku</div>
-            <div class="curiosity-category important-text">Anime</div>
-          </div>
-        </a>
-        <a href="#" class="curiosity">
-          <img src="./images/bg.jpg" alt="" class="curiosity-bg" />
-          <div class="curiosity-details">
-            <div class="curiosity-title">10 cosas que no sabías de Goku</div>
-            <div class="curiosity-category important-text">Anime</div>
-          </div>
-        </a>
-        <a href="#" class="curiosity">
-          <img src="./images/bg.jpg" alt="" class="curiosity-bg" />
-          <div class="curiosity-details">
-            <div class="curiosity-title">10 cosas que no sabías de Goku</div>
-            <div class="curiosity-category important-text">Anime</div>
-          </div>
-        </a>
-        <a href="#" class="curiosity">
-          <img src="./images/bg.jpg" alt="" class="curiosity-bg" />
-          <div class="curiosity-details">
-            <div class="curiosity-title">10 cosas que no sabías de Goku</div>
-            <div class="curiosity-category important-text">Anime</div>
-          </div>
-        </a>
-        <a href="#" class="curiosity">
-          <img src="./images/bg.jpg" alt="" class="curiosity-bg" />
-          <div class="curiosity-details">
-            <div class="curiosity-title">10 cosas que no sabías de Goku</div>
-            <div class="curiosity-category important-text">Anime</div>
-          </div>
-        </a>
-        <a href="#" class="curiosity">
-          <img src="./images/bg.jpg" alt="" class="curiosity-bg" />
-          <div class="curiosity-details">
-            <div class="curiosity-title">10 cosas que no sabías de Goku</div>
-            <div class="curiosity-category important-text">Anime</div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <footer>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#101010"
-          fill-opacity="1"
-          d="M0,128L30,117.3C60,107,120,85,180,69.3C240,53,300,43,360,69.3C420,96,480,160,540,181.3C600,203,660,181,720,170.7C780,160,840,160,900,165.3C960,171,1020,181,1080,165.3C1140,149,1200,107,1260,112C1320,117,1380,171,1410,197.3L1440,224L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
-        ></path>
-      </svg>
-      <div class="footer-content">
-        <!-- <img class="logo" src="images/coin.png" alt="" /> -->
-        Geek Cave Logo
-        <div class="social-links">
-          <a href="http://">
-            <img src="images/icons/instagram.svg" alt="" srcset=""
-          /></a>
-          <a href="http://">
-            <img src="images/icons/twitter.svg" alt="" srcset=""
-          /></a>
-          <a href="http://">
-            <img src="images/icons/facebook.svg" alt="" srcset=""
-          /></a>
-        </div>
-        <p>All Rights Reserved</p>
-      </div>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+		<script src="./js/app.js"></script>
+	</body>
 </html>

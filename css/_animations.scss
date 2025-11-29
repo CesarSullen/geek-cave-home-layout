@@ -1,0 +1,60 @@
+.show-up,
+.show-left,
+.bounce-in {
+	opacity: 0;
+	transform: translateY(40px);
+}
+
+.animated {
+	opacity: 1;
+	transform: translateY(0);
+
+	&.show-up {
+		animation: showUp 0.7s forwards;
+	}
+	&.show-left {
+		animation: showLeft 0.7s forwards;
+	}
+	&.bounce-in {
+		animation: bounceIn 0.8s forwards;
+	}
+}
+
+@keyframes showUp {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes showLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-60px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes bounceIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.4);
+	}
+	60% {
+		opacity: 1;
+		transform: scale(1.12);
+	}
+	80% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

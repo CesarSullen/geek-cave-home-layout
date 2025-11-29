@@ -1,0 +1,271 @@
+@import "reset";
+@import "animations";
+@import "footer";
+
+/* ===================== SEARCH ===================== */
+.search-section {
+	max-width: 700px;
+	width: 100%;
+}
+
+#search-bar {
+	padding: 1rem 1.5rem;
+	border-radius: $border-radius-rounded;
+	border: $border-general;
+	background-color: $dark-color;
+	color: $light-color;
+	font-size: 1.1rem;
+	width: 100%;
+
+	&::placeholder {
+		color: rgba($light-color, 0.6);
+	}
+
+	&:focus {
+		border-color: $primary-color;
+		box-shadow: 0 0 18px rgba($primary-color, 0.5);
+	}
+}
+
+/* ===================== CATEGORIES ===================== */
+.categories-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	width: 100%;
+
+	@media (min-width: 700px) {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.8rem;
+	}
+}
+
+.category {
+	@include flex-center;
+	gap: 14px;
+	padding: 1.2rem;
+	border-radius: $border-radius-general;
+	background-color: $dark-color;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+
+	img {
+		width: 40px;
+	}
+
+	&:hover {
+		background-color: $primary-color;
+		color: white;
+		transform: translateY(-10px);
+		box-shadow: $box-shadow-general;
+	}
+
+	@media (min-width: 700px) {
+		padding: 1.5rem;
+		img {
+			width: 50px;
+		}
+	}
+}
+
+/* ===================== MAIN GRID ===================== */
+.main-grid {
+	display: grid;
+	gap: 2.5rem;
+	width: 100%;
+
+	@media (min-width: 700px) {
+		grid-template-columns: 3fr 1fr;
+	}
+}
+
+/* ===================== NEWS CARDS ===================== */
+.news-section {
+	display: flex;
+	gap: 1.4rem;
+	overflow-x: auto;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	@media (min-width: 700px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		overflow: visible;
+	}
+}
+
+.blog {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 3/2;
+	border-radius: $border-radius-general;
+	overflow: hidden;
+	box-shadow: $box-shadow-general;
+}
+
+.blog-bg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	object-fit: cover;
+	transition: transform 0.5s ease;
+}
+
+.blog:hover .blog-bg {
+	transform: scale(1.1);
+}
+
+.blog-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		180deg,
+		transparent 20%,
+		rgba($primary-color, 0.92) 92%
+	);
+	padding: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 0.5rem;
+}
+
+.blog-title {
+	font-size: 1.45rem;
+	font-weight: 600;
+	color: white;
+	line-height: 1.2;
+}
+
+.blog-category {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	background: rgba(0, 0, 0, 0.75);
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	backdrop-filter: blur(4px);
+}
+
+/* ===================== DISCOVER PROFILES ===================== */
+.discover-section {
+	width: 100%;
+}
+
+.discover-grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* siempre 2 columnas */
+	gap: 1.6rem;
+	padding: 2rem;
+	border-radius: $border-radius-general;
+	background: $dark-color;
+	height: fit-content;
+}
+
+.profile a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.9rem;
+	color: white;
+	transition: transform 0.3s ease;
+
+	&:hover {
+		transform: translateY(-8px);
+	}
+
+	img {
+		width: 82px;
+		border-radius: 50%;
+		border: 4px solid $primary-color;
+		object-fit: cover;
+		transition: transform 0.35s ease;
+	}
+
+	&:hover img {
+		transform: scale(1.22);
+	}
+
+	.username {
+		font-weight: 600;
+		font-size: 1rem;
+	}
+}
+
+/* ===================== CURIOSITIES ===================== */
+.curiosities-section {
+	display: grid;
+	gap: 1.5rem;
+	padding: 2.5em 1.5rem;
+	background: $dark-color;
+	border-radius: 0;
+	width: 100%;
+
+	@media (min-width: 700px) {
+		margin-left: 0;
+		padding: 3rem 2.5rem;
+		border-radius: $border-radius-general;
+		grid-template-columns: repeat(3, 1fr);
+		align-content: center;
+		grid-column: 1 / span 2;
+	}
+}
+
+.curiosity {
+	display: flex;
+	gap: 1.3rem;
+	padding: 1.4rem;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: $border-radius-general;
+	overflow: hidden;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.09);
+		transform: translateY(-8px);
+		box-shadow: $box-shadow-general;
+	}
+
+	&:hover .curiosity-bg {
+		transform: scale(1.14);
+	}
+
+	.curiosity-bg {
+		width: 100px;
+		border-radius: $border-radius-general;
+		flex-shrink: 0;
+		transition: transform 0.45s ease;
+		align-self: center;
+	}
+
+	.curiosity-details {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+	}
+
+	.curiosity-title {
+		font-weight: 600;
+		font-size: 1.22rem;
+		line-height: 1.35;
+		color: white;
+	}
+
+	.curiosity-category {
+		font-weight: 600;
+		font-size: 1.05rem;
+		color: $primary-color;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+	}
+}

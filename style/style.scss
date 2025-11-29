@@ -1,35 +1,35 @@
 // Reset
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-  transition: all 0.2s;
-  list-style: none;
-  text-decoration: none;
-  outline: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	transition: all 0.2s;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
 }
 
 // Typography
 @font-face {
-  font-family: "Barlow";
-  src: url("../typography/Barlow/Barlow-Regular.ttf") format("truetype");
-  font-weight: 400;
+	font-family: "Barlow";
+	src: url("../typography/Barlow-Regular.ttf") format("truetype");
+	font-weight: 400;
 }
 @font-face {
-  font-family: "Barlow";
-  src: url("../typography/Barlow/Barlow-Bold.ttf ") format("truetype");
-  font-weight: 600;
+	font-family: "Barlow";
+	src: url("../typography/Barlow-Bold.ttf ") format("truetype");
+	font-weight: 600;
 }
 
 // Animations
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 // Colors
@@ -40,308 +40,308 @@ $gray: #292323;
 
 // Utilities
 .important-text {
-  color: $primary-color;
+	color: $primary-color;
 }
 .bold {
-  font-weight: 600;
+	font-weight: 600;
 }
 .italic {
-  font-style: italic;
+	font-style: italic;
 }
 .underline {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 .body-container {
-  padding: 1.5rem;
-  max-width: 1000px;
-  margin: auto;
+	padding: 1.5rem;
+	max-width: 1000px;
+	margin: auto;
 }
 .btn {
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  width: 100%;
-  max-width: 400px;
-  background-color: $primary-color;
-  color: $bg-color;
+	padding: 1rem 2rem;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	width: 100%;
+	max-width: 400px;
+	background-color: $primary-color;
+	color: $bg-color;
 
-  &:hover {
-    box-shadow: 0 0 10px 1px $primary-color;
-  }
-  &:active {
-    transform: scale(0.9);
-  }
+	&:hover {
+		box-shadow: 0 0 10px 1px $primary-color;
+	}
+	&:active {
+		transform: scale(0.9);
+	}
 }
 body {
-  background-color: $bg-color;
-  color: $font-color;
-  font-family: "Barlow", "Courier New", Courier, monospace;
+	background-color: $bg-color;
+	color: $font-color;
+	font-family: "Barlow", "Courier New", Courier, monospace;
 }
 .fade-in {
-  transform: translateX(100px);
-  opacity: 0;
-  transition: 0.5s;
+	transform: translateX(100px);
+	opacity: 0;
+	transition: 0.5s;
 
-  &.show {
-    transform: translateX(0);
-    opacity: 1;
-  }
+	&.show {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 #search-bar {
-  padding: 0.5rem;
-  border-radius: 15px;
-  border: solid 1px $primary-color;
-  width: 100%;
-  background-color: $gray;
-  color: $font-color;
-  &:focus {
-    box-shadow: 0 0 5px 1px $primary-color;
-  }
+	padding: 0.5rem;
+	border-radius: 15px;
+	border: solid 1px $primary-color;
+	width: 100%;
+	background-color: $gray;
+	color: $font-color;
+	&:focus {
+		box-shadow: 0 0 5px 1px $primary-color;
+	}
 }
 .section {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .categories-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5rem;
 }
 .category {
-  padding: 0.4rem;
-  border-radius: 15px;
-  background-color: $gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: $font-color;
+	padding: 0.4rem;
+	border-radius: 15px;
+	background-color: $gray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	color: $font-color;
 
-  &:hover {
-    transform: scale(1.1);
-    background-color: $primary-color;
-    box-shadow: 0 0 5px 1px $primary-color;
-  }
+	&:hover {
+		transform: scale(1.1);
+		background-color: $primary-color;
+		box-shadow: 0 0 5px 1px $primary-color;
+	}
 
-  img {
-    width: 30px;
-    cursor: pointer;
-  }
+	img {
+		width: 30px;
+		cursor: pointer;
+	}
 
-  .category-name {
-    text-transform: uppercase;
-  }
+	.category-name {
+		text-transform: uppercase;
+	}
 }
 
 .news-section {
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  gap: 1rem;
-  border-radius: 15px;
-  a {
-    animation: scroll 10s linear infinite;
-  }
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	gap: 1rem;
+	border-radius: 15px;
+	a {
+		animation: scroll 10s linear infinite;
+	}
 }
 
 .discover-section {
-  display: flex;
-  overflow-x: scroll;
-  gap: 1rem;
-  padding: 0.5rem;
-  border-radius: 15px;
-  background-color: $gray;
-  text-align: center;
-  font-size: 0.9rem;
-  &:hover {
-    box-shadow: 0 0 5px 1px $primary-color;
-  }
-  .profile:hover {
-    img {
-      transform: scale(1.1);
-    }
-  }
-  img {
-    width: 90px;
-  }
-  .username {
-    color: $font-color;
-  }
+	display: flex;
+	overflow-x: scroll;
+	gap: 1rem;
+	padding: 0.5rem;
+	border-radius: 15px;
+	background-color: $gray;
+	text-align: center;
+	font-size: 0.9rem;
+	&:hover {
+		box-shadow: 0 0 5px 1px $primary-color;
+	}
+	.profile:hover {
+		img {
+			transform: scale(1.1);
+		}
+	}
+	img {
+		width: 90px;
+	}
+	.username {
+		color: $font-color;
+	}
 }
 
 .feed-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
 }
 .blog {
-  color: $font-color;
-  position: relative;
-  width: 100%;
-  flex-shrink: 0;
+	color: $font-color;
+	position: relative;
+	width: 100%;
+	flex-shrink: 0;
 
-  &:hover {
-    .blog-title {
-      transform: scale(1.1) translate(1rem);
-    }
-    .blog-overlay {
-      height: 20%;
-    }
-  }
+	&:hover {
+		.blog-title {
+			transform: scale(1.1) translate(1rem);
+		}
+		.blog-overlay {
+			height: 20%;
+		}
+	}
 }
 .blog-bg {
-  border-radius: 15px;
-  width: 100%;
-  height: 100%;
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
 }
 .blog-overlay {
-  position: absolute;
-  border-radius: 15px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: linear-gradient(to bottom, #00000000, $primary-color);
-  display: flex;
-  align-items: end;
+	position: absolute;
+	border-radius: 15px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	background: linear-gradient(to bottom, #00000000, $primary-color);
+	display: flex;
+	align-items: end;
 }
 .blog-title {
-  position: absolute;
-  padding: 0.5rem 1rem;
-  bottom: 0px;
-  left: 0px;
-  font-size: 1.3rem;
+	position: absolute;
+	padding: 0.5rem 1rem;
+	bottom: 0px;
+	left: 0px;
+	font-size: 1.3rem;
 }
 .blog-category {
-  background-color: $gray;
-  border-radius: 15px 0 15px 0;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  font-size: 0.8rem;
+	background-color: $gray;
+	border-radius: 15px 0 15px 0;
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 0.8rem;
 }
 
 .curiosities-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0.5rem;
-  border-radius: 15px;
-  background-color: $gray;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 0.5rem;
+	border-radius: 15px;
+	background-color: $gray;
 
-  &:hover {
-    box-shadow: 0 0 5px 1px $primary-color;
-  }
+	&:hover {
+		box-shadow: 0 0 5px 1px $primary-color;
+	}
 }
 .curiosity {
-  display: flex;
-  gap: 15px;
+	display: flex;
+	gap: 15px;
 
-  &:hover {
-    .curiosity-bg {
-      transform: scale(0.9);
-    }
-    .curiosity-details {
-      transform: scale(1.1);
-      color: $primary-color;
-    }
-  }
+	&:hover {
+		.curiosity-bg {
+			transform: scale(0.9);
+		}
+		.curiosity-details {
+			transform: scale(1.1);
+			color: $primary-color;
+		}
+	}
 }
 .curiosity-bg {
-  width: 60%;
-  border-radius: 10px;
+	width: 60%;
+	border-radius: 10px;
 }
 
 .curiosity-details {
-  color: $font-color;
+	color: $font-color;
 }
 
 footer {
-  background-color: $primary-color;
-  font-size: 1.5rem;
-  color: $bg-color;
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 1rem;
-  }
-  .logo {
-    width: 70px;
-  }
-  .social-links {
-    display: flex;
-    gap: 20px;
-    img {
-      width: 40px;
-    }
-  }
+	background-color: $primary-color;
+	font-size: 1.5rem;
+	color: $bg-color;
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		padding: 1rem;
+	}
+	.logo {
+		width: 70px;
+	}
+	.social-links {
+		display: flex;
+		gap: 20px;
+		img {
+			width: 40px;
+		}
+	}
 }
 
 @media screen and (min-width: 700px) {
-  #search-bar {
-    font-size: 1.3rem;
-  }
-  .categories-section {
-    display: flex;
-    gap: 20px;
-  }
-  .category {
-    padding-inline: 20px;
-    img {
-      width: 40px;
-    }
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 2rem;
-  }
-  .news-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+	#search-bar {
+		font-size: 1.3rem;
+	}
+	.categories-section {
+		display: flex;
+		gap: 20px;
+	}
+	.category {
+		padding-inline: 20px;
+		img {
+			width: 40px;
+		}
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: 2rem;
+	}
+	.news-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 
-    a {
-      animation: none;
-    }
-  }
+		a {
+			animation: none;
+		}
+	}
 
-  .discover-section {
-    justify-self: right;
-    border: solid 2px $primary-color;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem;
-    font-size: 1rem;
-  }
+	.discover-section {
+		justify-self: right;
+		border: solid 2px $primary-color;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 1rem;
+		font-size: 1rem;
+	}
 
-  .feed-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .blog {
-    font-size: 1.5rem;
-  }
-  .blog-title {
-    font-size: 1.5rem;
-  }
-  .blog-category {
-    font-size: 1rem;
-  }
+	.feed-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.blog {
+		font-size: 1.5rem;
+	}
+	.blog-title {
+		font-size: 1.5rem;
+	}
+	.blog-category {
+		font-size: 1rem;
+	}
 
-  .curiosities-section {
-    border: solid 2px $primary-color;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+	.curiosities-section {
+		border: solid 2px $primary-color;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
 
-  footer svg {
-    display: none;
-  }
+	footer svg {
+		display: none;
+	}
 }
