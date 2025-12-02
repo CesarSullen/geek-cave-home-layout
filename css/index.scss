@@ -85,11 +85,6 @@
 .news-section {
 	display: flex;
 	gap: 1.4rem;
-	overflow-x: auto;
-	scrollbar-width: none;
-	&::-webkit-scrollbar {
-		display: none;
-	}
 
 	@media (min-width: 700px) {
 		display: grid;
@@ -106,6 +101,16 @@
 	border-radius: $border-radius-general;
 	overflow: hidden;
 	box-shadow: $box-shadow-general;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.9));
+	}
 }
 
 .blog-bg {
@@ -120,40 +125,27 @@
 	transform: scale(1.1);
 }
 
-.blog-overlay {
-	position: absolute;
-	inset: 0;
-	background: linear-gradient(
-		180deg,
-		transparent 20%,
-		rgba($primary-color, 0.92) 92%
-	);
-	padding: 1.6rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	gap: 0.5rem;
-}
-
 .blog-title {
+	position: absolute;
+	bottom: 3%;
+	left: 3%;
 	font-size: 1.45rem;
 	font-weight: 600;
 	color: white;
 	line-height: 1.2;
+	z-index: 1;
 }
 
 .blog-category {
 	position: absolute;
 	top: 14px;
 	right: 14px;
-	background: rgba(0, 0, 0, 0.75);
-	color: white;
+	background: $primary-color;
 	padding: 0.5rem 1rem;
 	border-radius: 20px;
 	font-size: 0.85rem;
 	text-transform: uppercase;
 	font-weight: 600;
-	backdrop-filter: blur(4px);
 }
 
 /* ===================== DISCOVER ===================== */
@@ -184,9 +176,8 @@
 	transition: all 0.3s ease;
 
 	&:hover {
-		background: rgba(255, 255, 255, 0.09);
+		background: rgba($primary-color, 0.8);
 		transform: translateX(8px);
-		box-shadow: $box-shadow-general;
 	}
 
 	.topic-name {
@@ -232,48 +223,66 @@
 }
 
 .curiosity {
-	display: flex;
-	gap: 1.3rem;
-	padding: 1.4rem;
-	background: rgba(255, 255, 255, 0.05);
+	position: relative;
 	border-radius: $border-radius-general;
 	overflow: hidden;
-	transition: all 0.3s ease;
+	aspect-ratio: 4 / 5;
+	box-shadow: $box-shadow-general;
+	text-decoration: none;
 
 	&:hover {
-		background: rgba(255, 255, 255, 0.09);
 		transform: translateY(-8px);
-		box-shadow: $box-shadow-general;
-	}
+		box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 
-	&:hover .curiosity-bg {
-		transform: scale(1.14);
+		.curiosity-bg {
+			transform: scale(1);
+		}
+
+		.curiosity-details {
+			transform: translateY(-4px);
+		}
 	}
 
 	.curiosity-bg {
-		width: 100px;
-		border-radius: $border-radius-general;
-		flex-shrink: 0;
-		transition: transform 0.45s ease;
-		align-self: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transform: scale(1.15);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 75%;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+		pointer-events: none;
 	}
 
 	.curiosity-details {
-		display: flex;
-		flex-direction: column;
-		gap: 0.8rem;
+		position: absolute;
+		bottom: 5%;
+		left: 5%;
+		right: 5%;
+		z-index: 1;
 	}
 
 	.curiosity-title {
 		font-weight: 600;
-		font-size: 1.22rem;
-		line-height: 1.35;
-		color: white;
+		font-size: 1.15rem;
+		line-height: 1.3;
+		margin-bottom: 0.4rem;
+		text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 	}
 
 	.curiosity-category {
 		font-weight: 600;
-		font-size: 1.05rem;
+		font-size: 0.8rem;
 		color: $primary-color;
 		text-transform: uppercase;
 		letter-spacing: 1.2px;
