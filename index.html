@@ -3,18 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="og:title" content="Geek Cave" />
+		<meta property="og:title" content="Freak Cave" />
 		<meta property="og:description" content="Tu cueva virgen" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="./assets/opengraph.png" />
 		<link rel="icon" type="image/png" href="./assets/logo.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
 		<link rel="stylesheet" href="./css/style.css" />
-		<title>Geek Cave</title>
+		<title>Freak Cave</title>
 	</head>
 	<body>
 		<div class="body-content">
-			<section class="search-section animated show-down">
+			<section class="search-section show-down">
 				<input
 					type="search"
 					id="search-bar"
@@ -23,20 +23,16 @@
 			</section>
 
 			<section class="categories-section show-down">
-				<a href="#" class="category">
-					<img src="./assets/icons/games.svg" alt="Juegos" />
-					<div class="category-name bold">Games</div>
+				<a href="#" class="category category--gaming">
+					<div class="category-name bold">Gaming</div>
 				</a>
-				<a href="#" class="category">
-					<img src="./assets/icons/anime.svg" alt="Anime" />
-					<div class="category-name bold">Anime</div>
+				<a href="#" class="category category--animacion">
+					<div class="category-name bold">Animación</div>
 				</a>
-				<a href="#" class="category">
-					<img src="./assets/icons/films.svg" alt="Películas" />
-					<div class="category-name bold">Films</div>
+				<a href="#" class="category category--cine">
+					<div class="category-name bold">Cine</div>
 				</a>
-				<a href="#" class="category">
-					<img src="./assets/icons/series.svg" alt="Series" />
+				<a href="#" class="category category--series">
 					<div class="category-name bold">Series</div>
 				</a>
 			</section>
@@ -52,7 +48,7 @@
 						<div class="blog-title bold">
 							Diablo II Resurrected – La obra maestra vuelve
 						</div>
-						<div class="blog-category bold">Games</div>
+						<div class="blog-category bold">Gaming</div>
 					</a>
 					<a href="#" class="blog show-left">
 						<img
@@ -63,7 +59,7 @@
 						<div class="blog-title bold">
 							Neon Genesis Evangelion: El final explicado
 						</div>
-						<div class="blog-category bold">Anime</div>
+						<div class="blog-category bold">Animación</div>
 					</a>
 					<a href="#" class="blog show-left">
 						<img
@@ -74,7 +70,7 @@
 						<div class="blog-title bold">
 							God of War Ragnarök – Primeras impresiones
 						</div>
-						<div class="blog-category bold">Games</div>
+						<div class="blog-category bold">Gaming</div>
 					</a>
 					<a href="#" class="blog show-left">
 						<img
@@ -83,7 +79,7 @@
 							alt=""
 						/>
 						<div class="blog-title bold">Top 10 openings de anime 2025</div>
-						<div class="blog-category bold">Anime</div>
+						<div class="blog-category bold">Animación</div>
 					</a>
 				</section>
 
@@ -133,7 +129,7 @@
 						/>
 						<div class="curiosity-details">
 							<div class="curiosity-title">10 cosas que no sabías de Goku</div>
-							<div class="curiosity-category important-text">Anime</div>
+							<div class="curiosity-category important-text">Animación</div>
 						</div>
 					</a>
 					<a href="#" class="curiosity show-up">
@@ -146,7 +142,7 @@
 							<div class="curiosity-title">
 								Secretos de The Last of Us Part II
 							</div>
-							<div class="curiosity-category important-text">Games</div>
+							<div class="curiosity-category important-text">Gaming</div>
 						</div>
 					</a>
 					<a href="#" class="curiosity show-up">
@@ -157,7 +153,7 @@
 						/>
 						<div class="curiosity-details">
 							<div class="curiosity-title">Easter eggs de Evangelion</div>
-							<div class="curiosity-category important-text">Anime</div>
+							<div class="curiosity-category important-text">Animación</div>
 						</div>
 					</a>
 					<a href="#" class="curiosity show-up">
@@ -170,7 +166,7 @@
 							<div class="curiosity-title">
 								Los mejores finales alternativos
 							</div>
-							<div class="curiosity-category important-text">Films</div>
+							<div class="curiosity-category important-text">Cine</div>
 						</div>
 					</a>
 					<a href="#" class="curiosity show-up">
@@ -196,7 +192,7 @@
 							<div class="curiosity-title">
 								La historia real de Resident Evil
 							</div>
-							<div class="curiosity-category important-text">Games</div>
+							<div class="curiosity-category important-text">Gaming</div>
 						</div>
 					</a>
 				</section>
@@ -206,11 +202,13 @@
 		<footer class="footer">
 			<div class="footer-content">
 				<div class="footer-brand">
-					<div class="footer-logo">Geek Cave</div>
+					<img src="./assets/logo-no-bg.png" class="footer-logo" />
+					<h2 class="footer-title">Freak Cave</h2>
 					<p class="footer-tagline">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
 						placeat ex est excepturi sequi error non.
 					</p>
+
 					<div class="social-links">
 						<a href="#" aria-label="Instagram">
 							<img src="./assets/icons/instagram.svg" alt="" />
@@ -221,9 +219,9 @@
 						<a href="#" aria-label="Facebook">
 							<img src="./assets/icons/facebook.svg" alt="" />
 						</a>
-						<!-- <a href="#" aria-label="YouTube">
+						<a href="#" aria-label="YouTube">
 							<img src="./assets/icons/youtube.svg" alt="" />
-						</a> -->
+						</a>
 					</div>
 				</div>
 
@@ -231,7 +229,7 @@
 					<h3>Explora</h3>
 					<ul>
 						<li><a href="#">Curiosidades</a></li>
-						<li><a href="#">Anime</a></li>
+						<li><a href="#">Animación</a></li>
 						<li><a href="#">Videojuegos</a></li>
 						<li><a href="#">Películas</a></li>
 						<li><a href="#">Series</a></li>
@@ -260,7 +258,9 @@
 			</div>
 
 			<div class="footer-bottom">
-				<p>© 2025 <strong>Geek Cave</strong>. Todos los derechos reservados.</p>
+				<p>
+					© 2025 <strong>Freak Cave</strong>. Todos los derechos reservados.
+				</p>
 				<div class="legal-links">
 					<a href="#">Política de Privacidad</a>
 					<a href="#">Términos de Uso</a>
