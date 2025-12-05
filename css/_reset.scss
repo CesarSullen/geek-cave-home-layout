@@ -23,6 +23,11 @@ $box-shadow-general: 0 6px 20px rgba(0, 0, 0, 0.6);
 	src: url("../typography/Barlow-Bold.ttf") format("truetype");
 	font-weight: 600;
 }
+@font-face {
+	font-family: "Alice";
+	src: url("../typography/Alice-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
 
 /* =====================
    RESET & BASE

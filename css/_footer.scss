@@ -28,6 +28,10 @@
 		margin-bottom: 1rem;
 		filter: invert(1) drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.6));
 	}
+	&-title {
+		font-family: "Alice";
+		letter-spacing: 1.1px;
+	}
 
 	&-tagline {
 		font-size: 0.95rem;

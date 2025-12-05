@@ -1,14 +1,15 @@
 @import "reset";
 @import "animations";
+@import "navbar";
 @import "footer";
 
 /* ===================== SEARCH ===================== */
 .search-section {
-	max-width: 700px;
+	max-width: 900px;
 	width: 100%;
 }
 
-#search-bar {
+.search-bar {
 	padding: 1rem 1.5rem;
 	border-radius: $border-radius-rounded;
 	border: $border-general;
@@ -167,7 +168,6 @@
 	background: rgba(255, 255, 255, 0.04);
 	border-radius: 12px;
 	color: white;
-	font-weight: 600;
 	transition: all 0.3s ease;
 	backdrop-filter: blur(15px);
 

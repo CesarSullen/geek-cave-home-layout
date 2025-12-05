@@ -13,11 +13,43 @@
 		<title>Freak Cave</title>
 	</head>
 	<body>
+		<nav class="nav">
+			<div class="nav-icon-btn">
+				<a href="./" class="nav-icon-wrapper">
+					<img src="../assets/logo-no-bg.png" class="nav-icon" />
+					<p class="nav-title">Freak Cave</p>
+				</a>
+				<button id="toggle-btn" class="toggle-btn">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+			</div>
+			<ul class="nav-links">
+				<li><a href="./" class="nav-link">home</a></li>
+				<li><a href="#news-section" class="nav-link">news</a></li>
+				<li><a href="#discover-section" class="nav-link">discover</a></li>
+				<li><a href="#curiosities-section" class="nav-link">curiosities</a></li>
+			</ul>
+		</nav>
+
+		<div id="bottom-panel" class="bottom-panel">
+			<ul class="bottom-panel-links">
+				<li><a href="#./" class="panel-link">home</a></li>
+				<li><a href="#news-section" class="panel-link">news</a></li>
+				<li><a href="#discover-section" class="panel-link">discover</a></li>
+				<li>
+					<a href="#curiosities-section" class="panel-link">curiosities</a>
+				</li>
+			</ul>
+		</div>
+
 		<div class="body-content">
 			<section class="search-section show-down">
 				<input
 					type="search"
 					id="search-bar"
+					class="search-bar"
 					placeholder="Buscar juegos, anime, películas..."
 				/>
 			</section>
@@ -42,7 +74,7 @@
 			</section>
 
 			<main class="main-grid">
-				<section class="news-section">
+				<section id="news-section" class="news-section">
 					<a href="#" class="blog show-left">
 						<img
 							src="https://picsum.photos/600/400?random=10"
@@ -87,7 +119,7 @@
 					</a>
 				</section>
 
-				<section class="discover-section">
+				<section id="discover-section" class="discover-section">
 					<div class="discover-topics">
 						<a href="#" class="topic show-right">
 							<span class="topic-name">#naruto</span>
@@ -124,7 +156,7 @@
 					</div>
 				</section>
 
-				<section class="curiosities-section">
+				<section id="curiosities-section" class="curiosities-section">
 					<a href="#" class="curiosity show-up">
 						<img
 							src="https://picsum.photos/400/400?random=20"
